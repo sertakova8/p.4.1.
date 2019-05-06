@@ -1,0 +1,8 @@
+high = int(input('Введите высоту пирамиды (от 0 до 23): '))
+if (high < 0) or (high > 23):
+    high = int(input('Введите число от 0 до 23!!! : '))
+
+s = '{:>' + str(high) + '}'
+
+for i in range(high+1):
+    print(s.format(i * '#'))
