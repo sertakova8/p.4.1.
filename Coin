@@ -1,0 +1,31 @@
+sum = int(input('Введите сумму для сдачи: '))
+qt_50 = 0
+qt_10 = 0
+qt_5 = 0
+qt_1 = 0
+
+mon = [50, 10, 5, 1]
+
+res = sum
+while res >= mon[0]:
+    res = res - mon[0]
+    qt_50 += 1
+
+while res >= mon[1]:
+    res = res - mon[1]
+    qt_10 += 1
+
+while res >= mon[2]:
+    res = res - mon[2]
+    qt_5 += 1
+
+while res >= mon[3]:
+    res = res - mon[3]
+    qt_1 += 1
+
+print('Потрачено монет номиналом 50 копеек - ', qt_50)
+print('Потрачено монет номиналом 10 копеек - ', qt_10)
+print('Потрачено монет номиналом 5 копеек - ', qt_5)
+print('Потрачено монет номиналом 1 копейка - ', qt_1)
+print('Общее количество монет - ', qt_50 + qt_10 + qt_5 + qt_1)
+
